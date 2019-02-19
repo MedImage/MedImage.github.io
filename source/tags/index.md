@@ -1,6 +1,7 @@
 ---
-title: Tags
-date: 2019-01-17 19:42:39
+title: tags
+date: 2019-02-19 20:24:17
+type: "tags"
 front-matter: 
 comments: false
 ---

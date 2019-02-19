@@ -120,8 +120,8 @@ index_with_subtitle: false
 menu:
   Home: / || home
   About: /resume/ || user
-  Categories: /categories/ || th
-  Tags: /tags/ || tags
+  categories: /categories/ || th
+  tags: /tags/ || tags
   Timelines: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
