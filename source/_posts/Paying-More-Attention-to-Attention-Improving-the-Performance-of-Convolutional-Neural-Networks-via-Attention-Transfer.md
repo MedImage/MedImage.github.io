@@ -12,7 +12,7 @@ tags:
 
 文章提出了几种注意力转移的新方法，在各种数据集以及卷积神经网络架构上效果得到一致的提升。
 
-> 该发表在 2017 年 ICLR;
+> 该文章发表在 2017 年 ICLR;
 >
 > - **paper:**  [Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer](https://openreview.net/forum?id=Sks9_ajex)
 >
