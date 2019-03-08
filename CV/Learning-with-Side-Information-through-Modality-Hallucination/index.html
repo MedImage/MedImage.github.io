@@ -120,7 +120,7 @@
 <meta property="og:image" content="https://medimageai.com/CV/Learning-with-Side-Information-through-Modality-Hallucination/Fig4.PNG">
 <meta property="og:image" content="https://medimageai.com/CV/Learning-with-Side-Information-through-Modality-Hallucination/Fig5.PNG">
 <meta property="og:image" content="https://medimageai.com/CV/Learning-with-Side-Information-through-Modality-Hallucination/Fig6.PNG">
-<meta property="og:updated_time" content="2019-03-08T13:28:39.613Z">
+<meta property="og:updated_time" content="2019-03-08T13:31:53.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Learning with Side Information through Modality Hallucination">
 <meta name="twitter:description" content="Published in 2016 CVPR  paper:  Learning with Side Information through Modality Hallucination">
@@ -466,10 +466,15 @@
 </ul>
 <h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h2><ul>
 <li>Architecture<br><img src="Fig1.PNG" width="800" hegiht="650"></li>
-<li>Training procedure<ul>
-<li>Independently train the RGB and depth networks (Fast R-CNN).</li>
-<li>Initialize the hallucination network with the depth network parameters.</li>
-<li>Finetune the whole network in Figure 1. (alpha=0.5, beta=1.0, gamma is determined by running several iterations so that the hallucination loss is roughly 10 times larger than the other losses) (freeze the depth network lower than the hallucination loss (pool5)).<br><img src="Fig2.PNG" width="400" hegiht="250"><br><img src="Fig3.PNG" width="450" hegiht="300"></li>
+<li><p>Training procedure</p>
+<ul>
+<li><p>Independently train the RGB and depth networks (Fast R-CNN).</p>
+</li>
+<li><p>Initialize the hallucination network with the depth network parameters.</p>
+</li>
+<li><p>Finetune the whole network in Figure 1. (alpha=0.5, beta=1.0, gamma is determined by running several iterations so that the hallucination loss is roughly 10 times larger than the other losses) (freeze the depth network lower than the hallucination loss (pool5)).<br><img src="Fig2.PNG" width="400" hegiht="250"></p>
+<p><img src="Fig3.PNG" width="450" hegiht="300"></p>
+</li>
 </ul>
 </li>
 <li>Gradient clipping to decrease the influence from the outliers (If the total gradient exceeds threshold T (10), all gradients are scaled by T/ total norm (L2 norm)).</li>
