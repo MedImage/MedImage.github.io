@@ -233,7 +233,7 @@
         
           
   
-  <li class="menu-item menu-item-about menu-item-active">
+  <li class="menu-item menu-item-about">
     <a href="/resume/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
 </li>
@@ -243,7 +243,7 @@
         
           
   
-  <li class="menu-item menu-item-categories">
+  <li class="menu-item menu-item-categories menu-item-active">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">1</span>
       </a>
@@ -441,55 +441,17 @@
 
       
         
-          
-            <h2 id="1-Progressively-Complementarity-aware-Fusion-Network-for-RGB-D-Salient-Object-Detection"><a href="#1-Progressively-Complementarity-aware-Fusion-Network-for-RGB-D-Salient-Object-Detection" class="headerlink" title="1. Progressively Complementarity-aware Fusion Network for RGB-D Salient Object Detection"></a>1. Progressively Complementarity-aware Fusion Network for RGB-D Salient Object Detection</h2><blockquote>
+          <h2 id="1-Progressively-Complementarity-aware-Fusion-Network-for-RGB-D-Salient-Object-Detection"><a href="#1-Progressively-Complementarity-aware-Fusion-Network-for-RGB-D-Salient-Object-Detection" class="headerlink" title="1. Progressively Complementarity-aware Fusion Network for RGB-D Salient Object Detection"></a>1. Progressively Complementarity-aware Fusion Network for RGB-D Salient Object Detection</h2><blockquote>
 <p>Published in 2018 CVPR</p>
 <p><strong>paper:</strong> <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Progressively_Complementarity-Aware_Fusion_CVPR_2018_paper.html" target="_blank" rel="noopener">Progressively Complementarity-aware Fusion Network for RGB-D Salient Object Detection</a></p>
 </blockquote>
-<ul>
-<li>Main novelty:<ul>
-<li>Design a complementarity-aware fusion (CA-Fuse) module, which introduces cross-modal residual functions and complementarity-aware supervisions (side loss)</li>
-<li>Add level-wise supervision from deep to shallow densely</li>
-</ul>
-</li>
-<li>Overall architecture<br><img src="Fig1.png" width="750" align="center"></li>
-<li>CA-Fuse module<br><img src="Fig2.png" width="750" align="center"></li>
-<li>Details: Add a large kernel convolution (Conv6, 13X13) and include five set of side loss functions (weights all set to 1) plus a loss to encourage informative combination of all side outputs.<br><img src="Fig3.png" width="300" align="center"></li>
-<li>Results<br><img src="Fig4.png" width="750" align="center"></li>
-</ul>
-<h2 id="2-Attention-aware-Cross-modal-Cross-level-Fusion-Network-for-RGB-D-Salient-Object-Detection"><a href="#2-Attention-aware-Cross-modal-Cross-level-Fusion-Network-for-RGB-D-Salient-Object-Detection" class="headerlink" title="2. Attention-aware Cross-modal Cross-level Fusion Network for RGB-D Salient Object Detection"></a>2. Attention-aware Cross-modal Cross-level Fusion Network for RGB-D Salient Object Detection</h2><blockquote>
-<p>Published in 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-<p><strong>paper:</strong> <a href="https://scholars.cityu.edu.hk/en/publications/attentionaware-crossmodal-crosslevel-fusion-network-for-rgbd-salient-object-detection(38d5cc13-4d46-4086-984b-e9081a09081e" target="_blank" rel="noopener">Attention-aware Cross-modal Cross-level Fusion Network for RGB-D Salient Object Detection</a>.html)</p>
-</blockquote>
-<ul>
-<li>Main novelty: Proposed an attention-aware cross-modal cross-level fusion (ACCF) module to fuse different level RGB and depth features. The ACCF module is similar to the SE block.</li>
-<li>Details: Add a large kernel convolution (Conv6, 13X13) and include five  loss functions  (weights all set to 1).<br><img src="Fig5.png" width="750" align="center"></li>
-<li>Results (worse than the CVPR results)<br><img src="Fig6.png" width="450" align="center"></li>
-</ul>
-<h2 id="3-Multi-Modal-Fusion-Network-with-Multi-Scale-Multi-Path-and-Cross-Modal-Interactions-for-RGB-D-Salient-Object-Detection"><a href="#3-Multi-Modal-Fusion-Network-with-Multi-Scale-Multi-Path-and-Cross-Modal-Interactions-for-RGB-D-Salient-Object-Detection" class="headerlink" title="3. Multi-Modal Fusion Network with Multi-Scale Multi-Path and Cross-Modal Interactions for RGB-D Salient Object Detection"></a>3. Multi-Modal Fusion Network with Multi-Scale Multi-Path and Cross-Modal Interactions for RGB-D Salient Object Detection</h2><blockquote>
-<p>Published in 2019 Pattern Recognition</p>
-<p><strong>paper:</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0031320318303054" target="_blank" rel="noopener">Multi-Modal Fusion Network with Multi-Scale Multi-Path and Cross-Modal Interactions for RGB-D Salient Object Detection</a></p>
-</blockquote>
-<ul>
-<li>Main novelty:<ul>
-<li>Propose a global understanding branch (pooling) and a local capturing branch (realized through dilated convolution).</li>
-<li>Multi-layer fusion by element-wise summation.</li>
-</ul>
-</li>
-<li>Architecture<br><img src="Fig7.png" width="750" align="center"></li>
-<li>Details<ul>
-<li>Train the R_SalNet first by VGG initialization. Then train the D_SalNet with R_SalNet initialization. Finally, fintune the whole network with paired inputs.</li>
-<li>FC layer outputs (3136 vector) is warped to the saliency map of 56 x 56.</li>
-</ul>
-</li>
-<li>Results<ul>
-<li>Achieve better results when compared to state-of-the-arts methods (seems even worse then the IROS paper).<br><img src="Fig8.png" width="750" align="center"></li>
-<li>The fusion direction is important (depth to RGB works best). The authors stated that the ‘MP+CI-Bi’ method introduced too much parameters  and the bi-directional connections may destroy the fragile architecture. Since the fusion was achieved by summation, no additional parameters should be introduced. The first reason seems unreasonable.<br><img src="Fig9.png" width="450" align="center"></li>
-</ul>
-</li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/CV/Fusion-Network-for-RGB-D-Salient-Object-Detection/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

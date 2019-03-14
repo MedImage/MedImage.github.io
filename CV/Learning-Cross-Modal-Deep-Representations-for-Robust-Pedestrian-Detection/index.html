@@ -114,20 +114,20 @@
 <meta property="og:site_name" content="MedImage">
 <meta property="og:description" content="Published in 2017 CVPR  paper:  Learning Cross-Modal Deep Representations for Robust Pedestrian Detection code:  CMT-CNN">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig1.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig2.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig3.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig4.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig5.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig6.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig7.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig8.png">
-<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig9.png">
-<meta property="og:updated_time" content="2019-03-14T06:03:03.711Z">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig1.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig2.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig3.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig4.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig5.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig6.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig7.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig8.PNG">
+<meta property="og:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig9.PNG">
+<meta property="og:updated_time" content="2019-03-14T06:27:11.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Learning Cross-Modal Deep Representations for Robust Pedestrian Detection">
 <meta name="twitter:description" content="Published in 2017 CVPR  paper:  Learning Cross-Modal Deep Representations for Robust Pedestrian Detection code:  CMT-CNN">
-<meta name="twitter:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig1.png">
+<meta name="twitter:image" content="https://medimageai.com/CV/Learning-Cross-Modal-Deep-Representations-for-Robust-Pedestrian-Detection/Fig1.PNG">
 
 
 
@@ -244,7 +244,7 @@
         
           
   
-  <li class="menu-item menu-item-about menu-item-active">
+  <li class="menu-item menu-item-about">
     <a href="/resume/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
 </li>
@@ -254,7 +254,7 @@
         
           
   
-  <li class="menu-item menu-item-categories">
+  <li class="menu-item menu-item-categories menu-item-active">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">1</span>
       </a>
@@ -460,7 +460,7 @@
 </blockquote>
 <a id="more"></a>
 <h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><ul>
-<li>Exploiting multispectral data can make the distinguishment of hard positive and negative samples easier in RGB images.<br><img src="Fig1.png" width="450" align="center"></li>
+<li>Exploiting multispectral data can make the distinguishment of hard positive and negative samples easier in RGB images.<br><img src="Fig1.PNG" width="450" align="center"></li>
 <li>Most surveillance systems still employ traditional RGB sensors.</li>
 <li>Few labeled multi-modal datasets are availabel for pedestrian detection.</li>
 </ul>
@@ -469,15 +469,15 @@
 <li>First work on the problem of pedestrian detection under adverse illumination conditions with CNNs.</li>
 </ul>
 <h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h2><ul>
-<li>Overall framework consists of <strong>RRN</strong> (Region Reconstruction Netowrk) and <strong>MSDN</strong> (Multi-Scale Detection Network).<br><img src="Fig2.png" width="450" align="center"><ul>
+<li>Overall framework consists of <strong>RRN</strong> (Region Reconstruction Netowrk) and <strong>MSDN</strong> (Multi-Scale Detection Network).<br><img src="Fig2.PNG" width="450" align="center"><ul>
 <li>RRN: Reconstruct thermal data from RGB images.<ul>
 <li><strong>Inputs</strong>: RGB image and the corresponding bounding box proposals generated by a pretrained generic pedestrian detector (ACF, contain both true and false positives).</li>
-<li><strong>Outputs</strong>: Reconstructed proposals (L2 loss).<br><font color="orange"><em>Initial proposal generation can easy the reconstruction of hard positive and negative samples.</em></font><br><img src="Fig3.png" width="700" align="center"></li>
+<li><strong>Outputs</strong>: Reconstructed proposals (L2 loss).<br><font color="orange"><em>Initial proposal generation can easy the reconstruction of hard positive and negative samples.</em></font><br><img src="Fig3.PNG" width="700" align="center"></li>
 </ul>
 </li>
 <li>MSDN: Pedestrian detection.<ul>
 <li><strong>Inputs</strong>: Only RGB images and bounding box proposals from ACF.</li>
-<li><strong>Outputs</strong>: Detection results (location and classification results of the proposals).<br><img src="Fig4.png" width="700" align="center"></li>
+<li><strong>Outputs</strong>: Detection results (location and classification results of the proposals).<br><img src="Fig4.PNG" width="700" align="center"></li>
 </ul>
 </li>
 <li>Optimization procedure.<ul>
@@ -490,14 +490,14 @@
 </ul>
 <h2 id="Experiments-and-Results"><a href="#Experiments-and-Results" class="headerlink" title="Experiments and Results"></a>Experiments and Results</h2><ul>
 <li>KAIST dataset (both RGB and thermal data)<ul>
-<li>Effectiveness of the proposed cross-modality transfer CNN (CMT-CNN).<br><strong>CMT-CNN-SA</strong>: only Sub-Net A was used. <strong>CMT-CNN-SA-SB (Random)</strong>: initialize Sub-Net B with radom parameters. <strong>CMT-CNN-SA-SB (ImageNet)</strong>: Initialize Sub-Net B with ImageNet pretraining. <strong>CMT-CNN</strong>: proposed.<br><em>Evaluated by log average miss-rate (MR).</em><br><img src="Fig5.png" width="450" align="center"></li>
-<li>Effectiveness of the reconstruction subnet.<br>Can successfully reconstruct the thermal data.<br>Can clearly distinguish the true pedestrian proposals from the false positive samples.<br><img src="Fig6.png" width="450" align="center"></li>
-<li>Comparison to state-of-the-art methods.<br><img src="Fig7.png" width="700" align="center"></li>
+<li>Effectiveness of the proposed cross-modality transfer CNN (CMT-CNN).<br><strong>CMT-CNN-SA</strong>: only Sub-Net A was used. <strong>CMT-CNN-SA-SB (Random)</strong>: initialize Sub-Net B with radom parameters. <strong>CMT-CNN-SA-SB (ImageNet)</strong>: Initialize Sub-Net B with ImageNet pretraining. <strong>CMT-CNN</strong>: proposed.<br><em>Evaluated by log average miss-rate (MR).</em><br><img src="Fig5.PNG" width="450" align="center"></li>
+<li>Effectiveness of the reconstruction subnet.<br>Can successfully reconstruct the thermal data.<br>Can clearly distinguish the true pedestrian proposals from the false positive samples.<br><img src="Fig6.PNG" width="450" align="center"></li>
+<li>Comparison to state-of-the-art methods.<br><img src="Fig7.PNG" width="700" align="center"></li>
 </ul>
 </li>
 <li>Caltech dataset ( only RGB images)<ul>
 <li>As no thermal data available for the Calthech dataset, the proposed method initialize Sub-Net B with the RRN trained on KAIST dataset.</li>
-<li>Results<br>The performance gain by the knowledge transfer was smaller than that on KAIST, which has worse illumination.<br><strong>CMT-CNN-SA-SC (RGB-KAIST)</strong>: Pretrain Sub-Net B on ImageNet, then further train it on KAIST RGB data.<br><img src="Fig8.png" width="450" align="center"><br><img src="Fig9.png" width="700" align="center"></li>
+<li>Results<br>The performance gain by the knowledge transfer was smaller than that on KAIST, which has worse illumination.<br><strong>CMT-CNN-SA-SC (RGB-KAIST)</strong>: Pretrain Sub-Net B on ImageNet, then further train it on KAIST RGB data.<br><img src="Fig8.PNG" width="450" align="center"><br><img src="Fig9.PNG" width="700" align="center"></li>
 </ul>
 </li>
 </ul>
