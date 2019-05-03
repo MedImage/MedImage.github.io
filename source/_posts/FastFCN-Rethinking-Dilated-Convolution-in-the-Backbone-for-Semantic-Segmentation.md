@@ -25,37 +25,37 @@ tags:
 ## Methods
 
 - Joint upsampling
-  <img src="Fig1.png" width="450"  align=center />
+  <img src="Fig1.PNG" width="450"  align=center />
   yh - high-resolution target image, yl - low-resolution target image, xh - high-resolution guidance image, hl - low-resolution guidance image
 
 - JPU module
 
   - Problem formulation
-    <img src="Fig4.png" width="750"  align=center />
-    <img src="Fig2.png" width="450"  align=center />
-    <img src="Fig3.png" width="450"  align=center />
+    <img src="Fig4.PNG" width="750"  align=center />
+    <img src="Fig2.PNG" width="450"  align=center />
+    <img src="Fig3.PNG" width="450"  align=center />
     S - split, M - merge, Cr - regular convolution, Cd - dilated convolution, Cs - stride convolution, adjacent S and M operations can be canceled out, ys - output feature map from normal FCN (32x), yd - output feature map from DilatedFCN (8x).
 
-  <img src="Fig5.png" width="400"  align=center />
+  <img src="Fig5.PNG" width="400"  align=center />
   y is an approximation of yd. Approximating yd using ys is the same as the joint upsampling problem.
 
   - Problem solving
-    <img src="Fig6.png" width="500"  align=center />
-    <img src="Fig7.png" width="700"  align=center />
+    <img src="Fig6.PNG" width="500"  align=center />
+    <img src="Fig7.PNG" width="700"  align=center />
 
 ## Results
 
 - Pascal Context dataset
-  <img src="Fig8.png" width="350"  align=center />
+  <img src="Fig8.PNG" width="350"  align=center />
 
-   <img src="Fig9.png" width="350"  align=center /> 
+   <img src="Fig9.PNG" width="350"  align=center /> 
 
-  <img src="Fig10.png" width="350"  align=center />
+  <img src="Fig10.PNG" width="350"  align=center />
 
 - ADE20K dataset
-  <img src="Fig11.png" width="350"  align=center /> 
+  <img src="Fig11.PNG" width="350"  align=center /> 
 
-- <img src="Fig12.png" width="350"  align=center />
+- <img src="Fig12.PNG" width="350"  align=center />
 
 ## Conclusion
 
