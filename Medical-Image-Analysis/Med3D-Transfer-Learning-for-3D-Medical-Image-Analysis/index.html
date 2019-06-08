@@ -114,19 +114,19 @@
 <meta property="og:site_name" content="MedImage">
 <meta property="og:description" content="arXiv: 1904.00625 arXiv: https://arxiv.org/abs/1904.00625 code: https://github.com/cshwhale/Med3D">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig1.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig2.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig3.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig4.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig5.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig6.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig7.PNG">
-<meta property="og:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig8.PNG">
-<meta property="og:updated_time" content="2019-06-08T16:46:11.827Z">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig1.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig2.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig3.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig4.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig5.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig6.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig7.PNG">
+<meta property="og:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig7.PNG">
+<meta property="og:updated_time" content="2019-06-08T17:13:05.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Med3D Transfer Learning for 3D Medical Image Analysis">
 <meta name="twitter:description" content="arXiv: 1904.00625 arXiv: https://arxiv.org/abs/1904.00625 code: https://github.com/cshwhale/Med3D">
-<meta name="twitter:image" content="https://medimageai.com/Medical-Image-Analysis/Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis/fig1.PNG">
+<meta name="twitter:image" content="c:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig1.PNG">
 
 
 
@@ -243,7 +243,7 @@
         
           
   
-  <li class="menu-item menu-item-about menu-item-active">
+  <li class="menu-item menu-item-about">
     <a href="/resume/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
 </li>
@@ -253,7 +253,7 @@
         
           
   
-  <li class="menu-item menu-item-categories">
+  <li class="menu-item menu-item-categories menu-item-active">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">2</span>
       </a>
@@ -470,8 +470,8 @@
 <h2 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h2><ul>
 <li>The motivation of this work is to train a high performance DCNN model with a relatively large 3D medical dataset, that can be used as the backbone pre-trained model to boost other tasks with insufficient training data.</li>
 </ul>
-<table border="0"><br>    <tr><br>        <td align="center"><img src="fig1.PNG" width="100%"></td><br>    </tr><br>    <tr><br>        <td align="center">Fig1: Framework of the proposed method.</td><br>    </tr><br></table>
-
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig1.PNG" width="750" align="center"></p>
+<p>​                                                          Fig1: Framework of the proposed method.</p>
 <ol>
 <li>In the first step, we collect several publicly available 3D segmentation datasets called 3DSeg-8 from different medical imaging modalities, e.g. magnetic resonance imaging (MRI) and computed tomography (CT), with various scan regions, target organs and pathologies. We then normalize all the data with the same spatial and intensity distributions;</li>
 <li>In the second step, we train a DCNN model, namely Med3D, to learn the features. The network has a shared encoder and eight simple decoder branches for each specific dataset;</li>
@@ -480,16 +480,13 @@
 <h3 id="Data-Selection-and-Normalization"><a href="#Data-Selection-and-Normalization" class="headerlink" title="Data Selection and Normalization"></a>Data Selection and Normalization</h3><ul>
 <li>To avoid over interpolation, we interpolate each volume to the median spacing according to the respective domain so as to keep the spatial characters of target in each domain. In domain $j$, the spacings from each axis of $x$, $y$ and $z$ in the $i$th image can be defined as $sp_{i, j}^{ax}$ where $ax$ belongs to $x$, $y$, $z$. The median spacings of the $j$th domain data is calculated as:</li>
 </ul>
-<table border="0"><br>    <tr><br>        <td align="center"><img src="fig2.PNG" width="50%"></td><br>    </tr><br></table>
-
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig2.PNG" width="500" align="center"></p>
 <p>​     where $f_{med}$ denotes the median operation and $N_j$ presents the number of data in $j$th domain. And the new image size $s_{i, j}^{ax}$ can be calculated from size in original image $s_{ax, i, j}$ as below:</p>
-<table border="0"><br>    <tr><br>        <td align="center"><img src="fig3.PNG" width="40%"></td><br>    </tr><br></table>
-
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig3.PNG" width="300" align="center"></p>
 <ul>
 <li>To eliminate the side-effect of pixel value outliers, especially for the CT modality (eg. metal in CT), we sort all the pixel values in each image and truncate the intensities to the range of 0.5 to 99.5 percentiles. Due to the different intensity range from various domains, we further normalize intensity value $v_i$ to $v_{i}^{‘}$ using the mean $v_m$ and standard deviation $v_sd$ in an individual volume as:</li>
 </ul>
-<table border="0"><br>    <tr><br>        <td align="center"><img src="fig4.PNG" width="30%"></td><br>    </tr><br></table>
-
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig4.PNG" width="200" align="center"></p>
 <h3 id="Med3D-Network"><a href="#Med3D-Network" class="headerlink" title="Med3D Network"></a>Med3D Network</h3><p>In the design of Med3D network, we leverage the existing feature extraction architecture of the mature networks and focus on exploring the optimal way to train Med3D with our unique 3DSeg-8 data.</p>
 <ul>
 <li>we connect the encoder with eight specific decoder branches, where each one of them corresponds to one particular dataset of 3DSeg-8. At the training stage, each decoder branch only processes the feature map extracted from the corresponding dataset and the rest branches do not participate in its optimization process.</li>
@@ -497,31 +494,41 @@
 </ul>
 <h3 id="Transfer-Learning"><a href="#Transfer-Learning" class="headerlink" title="Transfer Learning"></a>Transfer Learning</h3><p>The goal is to establish a general 3D backbone network that can be transferred to other medical tasks to gain better performance than training from scratch. To validate the effectiveness and versatility of the established Med3D network, we conduct three different and thorough experiments in segmentation and classification domains.</p>
 <ul>
-<li><strong>Lung Segmentation</strong>. We transfer encoder part from Med3D as the feature extraction part and then segmented lung in whole body followed by three groups of 3D decoder layers. The first set of decoder layers is composed of a transposed convolution layer with a kernel size of (3, 3, 3) and a channel number of 256 (which is used to amplify twice the feature map), and the convolutional layer with (3, 3, 3) kernel size and 128 channels. The remaining two groups of decoder layers are similar to the first group except doubling the number of channels per layer of network progressively. Finally, the convolution layer in the (1, 1, 1) kernel is employed to generate the final output and the number of channels corresponds to the number of categories.</li>
-<li><strong>Pulmonary Nodule Classification</strong>.  We transfer the encoder part of Med3D to the nodule classifier as a feature extractor, and the average pooling operation and fully-connected layer with (1, 1, 1) kernel size is added to classify the results.</li>
-<li><strong>LiTS Challenge</strong>. We employ the two-stage segmentation network to segmenting liver. <ul>
+<li><p><strong>Lung Segmentation</strong>. We transfer encoder part from Med3D as the feature extraction part and then segmented lung in whole body followed by three groups of 3D decoder layers. The first set of decoder layers is composed of a transposed convolution layer with a kernel size of (3, 3, 3) and a channel number of 256 (which is used to amplify twice the feature map), and the convolutional layer with (3, 3, 3) kernel size and 128 channels. The remaining two groups of decoder layers are similar to the first group except doubling the number of channels per layer of network progressively. Finally, the convolution layer in the (1, 1, 1) kernel is employed to generate the final output and the number of channels corresponds to the number of categories.</p>
+</li>
+<li><p><strong>Pulmonary Nodule Classification</strong>.  We transfer the encoder part of Med3D to the nodule classifier as a feature extractor, and the average pooling operation and fully-connected layer with (1, 1, 1) kernel size is added to classify the results.</p>
+</li>
+<li><p><strong>LiTS Challenge</strong>. We employ the two-stage segmentation network to segmenting liver. </p>
+<ul>
 <li>Firstly, we roughly segment liver in the whole image to obtain the region of interest (ROI) of the target. In this stage, we transfer the backbone pre-trained from Med3D as the encoder part, followed by a convolution layer with (1, 1, 1) kernel and the number of channels is two (liver vs. background). After resizing image, we input the image to coarse-segmentation network for extracting features with 32 times downsampling. Then, we upsample the feature map to the original image size by a bi-linear interpolation method. </li>
 <li>Secondly, we crop the liver target area according to the result from first stage and sub-segment the target again so as to obtain the final liver segmentation result. This stage is mainly focused on careful liver contour segmentation. In order to obtain more dense scale information in the feature map and obtain a larger receptive field, we embed the backbone pre-trained from Med3D into the state-the-of-art DenseASPP segmentation network. This network connects a set of atrous convolutional layers in a dense way which generates multi-scale features that not only cover a larger scale range, but also cover that scale range densely without significantly increasing the model size. And, we replace all the 2D kernels with the corresponding 3D version. Since there is inevitably bias between ground truth and liver target prediction in the result from the first step, in order to increase robustness of the fine-segmentation model, we perform a random expansion liver target area and then process it with two augmentation methods including rotation and translation.</li>
 </ul>
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig5.PNG" width="700" align="center"></p>
 </li>
 </ul>
-<table border="0"><br>    <tr><br>        <td align="center"><img src="fig5.PNG" width="100%"></td><br>    </tr><br>    <tr><br>        <td align="center">Fig2: Framework of the liver segmentation.</td><br>    </tr><br></table><br>### Experiments and Results<br><br>First, we show detailed settings of the experiments and some comparison results with different dataset settings. Next, we transfer the pre-trained Med3D encoder to initialize networks of other medical tasks and compare the results with training-from- scratch networks and pre-trained networks with Kinetics data. Finally, we concatenate the pre-trained Med3D encoder with DenseASPP network and demonstrate the state-of-the-art performance on the liver segmentation task using a single model.<br><br>- <strong>3DSeg-8 dataset.</strong> 3DSeg-8 is an aggregate dataset from eight public medical datasets. It covers different organs/tissues of interest with either CT or MR scans, as shown in Table 1.<br><br><table border="0"><br>    <tr><br>        <td align="center">Table 1: Details of 3DSeg-8 where “Tumours” and “Tissue” represent segmentation of lesions and components in an organ (“Organ”).</td><br>    </tr><br>    <tr><br>        <td align="center"><img src="fig6.PNG" width="100%"></td><br>    </tr><br></table>
-
+<p>​                                                             Fig2: Framework of the liver segmentation.</p>
+<h3 id="Experiments-and-Results"><a href="#Experiments-and-Results" class="headerlink" title="Experiments and Results"></a>Experiments and Results</h3><p>First, we show detailed settings of the experiments and some comparison results with different dataset settings. Next, we transfer the pre-trained Med3D encoder to initialize networks of other medical tasks and compare the results with training-from- scratch networks and pre-trained networks with Kinetics data. Finally, we concatenate the pre-trained Med3D encoder with DenseASPP network and demonstrate the state-of-the-art performance on the liver segmentation task using a single model.</p>
+<ul>
+<li><strong>3DSeg-8 dataset.</strong> 3DSeg-8 is an aggregate dataset from eight public medical datasets. It covers different organs/tissues of interest with either CT or MR scans, as shown in Table 1. </li>
+</ul>
+<p>Table 1: Details of 3DSeg-8 where “Tumors” and “Tissue” represent segmentation of lesions and components in an organ (“Organ”).</p>
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig6.PNG" width="700" align="center"></p>
 <ul>
 <li><p><strong>Network archietecture.</strong> We adopt the ResNet family (layers with 10, 18, 34, 50, 101, 152, and 200) and pre-activation ResNet-200 [30] architecture as the backbone of Med3D networks. To enable the network to train with 3D medical data, we modify the backbone network as follows: 1) we change the channel number of the first convolution layer from 3 to 1 due to the single channel volume input; 2) we replace all 2D convolution kernels with the 3D version; 3) we set the stride of the convolution kernels in blocks 3 and 4 equal to 1 to avoid down-sampling the feature maps, and we use dilated convolutional layers with rate r = 2 as suggested in [37] for the following layers for the same purpose; and 4) we replace the fully connected layer with a 8-branch decoder, where each branch consists of a 1x1x1 convolutional kernel and a corresponding up-sampling layer that scale the network output up to the original dimension.</p>
 </li>
 <li><p><strong>Transfer learning experiments</strong>. We select Visceral dataset as it includes abundant lung segmentation annotations for the data in 4 different modalities. There are 80 volumes in total. We pick 72 volumes for training and 8 volumes for testing. Both training and testing data contains 4 modalities. During training, we use same segmentation architectures (ResNet family) for all comparison candidates. The major difference comes from the way how we initialize the segmentation network, using pre-trained Med3D, pre-trained Kin or TFS. When training with pre-trained models, we optimize the model parameters with Adam [41] starting from the 0.001 learning rate, while the learning rate of TFS is set to 0.01.</p>
 </li>
 <li><p><strong>Pulmonary nodule classification task.</strong> LIDC dataset collected thoracic CT scans from 1,010 patients and nodules of each CT scan were annotated by four radiologists. The malignance of the nodules was defined in five levels, from benign to malignant according to the rules of LIDC-IDRI. We merge ‘1‘, ‘2‘, ‘3‘ as benign and ‘4‘, ‘5‘ as malignancy for reducing subjective uncertainty. The goal of this task is to compare the network performance of using different initialization methods. We change the backbone network to a classification architecture by attaching full connected layers to the encoder. We use 1,050 nodules for training and 99 nodules for testing. The optimization parameters are consistent with the previous task.</p>
-<table border="0"><br>    <tr><br>        <td align="center">Table 2: Results of transfer Med3D to lung segmentation (Seg) and pulmonary nodule classification (Cls) with Dice and accuracy evaluation metrics, respectively</td><br>    </tr><br>    <tr><br>        <td align="center"><img src="fig7.PNG" width="100%"></td><br>    </tr><br></table>
+<p>Table 2: Results of transfer Med3D to lung segmentation (Seg) and pulmonary nodule classification (Cls) with Dice and accuracy evaluation metrics, respectively.</p>
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig7.PNG" width="700" align="center"></p>
 </li>
 <li><p><strong>LiTS challenge.</strong> It makes us wonder if the Med3D can further boost the network performance on challenging tasks, such as LiTS challenge, where 3D networks trained from scratch usually have worse performance than 2D or 2.5D approaches using pre-trained models on natural images. </p>
 <ul>
 <li>The LiTS challenge dataset has totally 201 enhanced abdominal CT scans, which is further split to a training set with 131 scans and a test set with 70 scans. Only training data annotations are given to the public and the test ones are kept private with the host. The task is to segment the liver and liver tumors. It is known as a challenging task for two reasons. First, the number of training data is small. Second, the data is collected from different clinical sites with different scanners and protocols, causing large variations of the data quality, appearance and spacing.</li>
 <li>We set up the same segmentation network with ResNet-152 backbone and initialize it with the pre-trained Med3D. During training, we normalize all data with the average spacing value of the training data as some volumes do not give spacing information. We also normalize the intensity with a window width from -200 to 250 Hounsfield Unit. All the training hyper-parameters are same as the previous segmentation experiments. </li>
 </ul>
-<table border="0"><br>    <tr><br>        <td align="center">Table 3: LiTS challenge results.</td><br>    </tr><br>    <tr><br>        <td align="center"><img src="fig8.PNG" width="100%"></td><br>    </tr><br></table>
-
+<p>​                                                                           Table 3: LiTS challenge results.</p>
+<p><img src="C:/Users/Administrator/Desktop/11_arXiv_Med3D%20Transfer%20Learning%20for%203D%20Medical%20Image%20Analysis/fig7.PNG" width="700" align="center"></p>
 </li>
 </ul>
 <h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>In this work, we build a large-scale 3D medical dataset 3DSeg-8 and propose a novel framework to train Med3D networks with such data. The extracted features from Med3D networks are demonstrated to be effective and generalized, and can be used as the pre-trained features for other tasks with small training datasets. Compared with networks trained with natural videos or trained from scratch, the Med3D networks achieve superior results. We will release all pre-trained Med3D models as well as the related code. In the future, we will continue to collect more 3D medical data to further improve the Med3D pre-trained models.</p>
@@ -770,7 +777,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation"><span class="nav-number">1.</span> <span class="nav-text">Motivation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Contributions"><span class="nav-number">2.</span> <span class="nav-text">Contributions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Methods"><span class="nav-number">3.</span> <span class="nav-text">Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Selection-and-Normalization"><span class="nav-number">3.1.</span> <span class="nav-text">Data Selection and Normalization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Med3D-Network"><span class="nav-number">3.2.</span> <span class="nav-text">Med3D Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transfer-Learning"><span class="nav-number">3.3.</span> <span class="nav-text">Transfer Learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conclusion"><span class="nav-number">3.4.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation"><span class="nav-number">1.</span> <span class="nav-text">Motivation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Contributions"><span class="nav-number">2.</span> <span class="nav-text">Contributions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Methods"><span class="nav-number">3.</span> <span class="nav-text">Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Selection-and-Normalization"><span class="nav-number">3.1.</span> <span class="nav-text">Data Selection and Normalization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Med3D-Network"><span class="nav-number">3.2.</span> <span class="nav-text">Med3D Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transfer-Learning"><span class="nav-number">3.3.</span> <span class="nav-text">Transfer Learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Experiments-and-Results"><span class="nav-number">3.4.</span> <span class="nav-text">Experiments and Results</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conclusion"><span class="nav-number">3.5.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
             
 
           </div>
